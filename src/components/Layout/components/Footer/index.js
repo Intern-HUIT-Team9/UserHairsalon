@@ -23,7 +23,7 @@ function Footer() {
                 <a href="#">Điều khoản</a>
               </li>
               <li>
-                <a href="#">Chính sách bảo mật</a>
+                <a href="/private_policy">Chính sách bảo mật</a>
               </li>
               <li>
                 <a href="/faq">Những câu hỏi thường gặp</a>
