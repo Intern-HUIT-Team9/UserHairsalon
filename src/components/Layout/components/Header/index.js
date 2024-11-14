@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 import { useState } from "react";
@@ -161,15 +162,18 @@ function Header() {
               </PopoverPanel>
             </Popover>
             <Popover className={`relative ${styles.navItem}`}>
-              <PopoverButton
-                className={`flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 ${styles.navItem} `}
-              >
-                DỊCH VỤ
-                <ChevronDownIcon
-                  aria-hidden="true"
-                  className={`h-5 w-5 flex-none text-gray-400 group-hover:text-[#EC0707] ${styles.navItem}`}
-                />
-              </PopoverButton>
+              <div className="-mx-3">
+                <Link
+                  to="/services"
+                  className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  DỊCH VỤ
+                  <ChevronDownIcon
+                    aria-hidden="true"
+                    className="h-5 w-5 flex-none"
+                  />
+                </Link>
+              </div>
 
               <PopoverPanel
                 transition
@@ -299,27 +303,19 @@ function Header() {
                     </DisclosurePanel>
                   </Disclosure>
 
-                  <Disclosure as="div" className="-mx-3">
-                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                  <div className="-mx-3">
+                    <Link
+                      to="/services"
+                      className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >
                       DỊCH VỤ
                       <ChevronDownIcon
                         aria-hidden="true"
-                        className="h-5 w-5 flex-none group-data-[open]:rotate-180"
+                        className="h-5 w-5 flex-none"
                       />
-                    </DisclosureButton>
-                    <DisclosurePanel className="mt-2 space-y-2">
-                      {[...products, ...callsToAction].map((item) => (
-                        <DisclosureButton
-                          key={item.name}
-                          as="a"
-                          href={item.href}
-                          className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >
-                          {item.name}
-                        </DisclosureButton>
-                      ))}
-                    </DisclosurePanel>
-                  </Disclosure>
+                    </Link>
+                  </div>
+
                   <a
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
