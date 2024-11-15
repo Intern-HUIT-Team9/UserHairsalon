@@ -17,7 +17,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#">Về chúng tôi</a>
+                <a href="/about_us">Về chúng tôi</a>
               </li>
               <li>
                 <a href="#">Điều khoản</a>

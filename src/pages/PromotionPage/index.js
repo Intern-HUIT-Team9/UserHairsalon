@@ -4,6 +4,7 @@ import gift2 from "../../assets/images/gift/ong-gia-noel-2-fotor-bg-remover-2024
 import gift3 from "../../assets/images/gift/ngoi-sao-564181-fotor-bg-remover-20241021231023.png"
 import gift4 from "../../assets/images/gift/Remove-bg.ai_1729523507356.png"
 import styles from "../PrivatePolicy/PrivatePolicy.module.scss"
+import banner from "../../assets/images/gift/banner.webp"
 
 
 function PromotionPage() {
@@ -35,83 +36,57 @@ function PromotionPage() {
                     </li>
                 </ol>
             </nav>
-            {/* <div className="flex justify-center align-middle">
-                <div className="grid grid-cols-3 gap-4 ">
-                <div className="max-w-sm rounded overflow-hidden shadow-lg relative">
-              <img
-                className={`w-full h-full object-cover`}
-                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMs3at6HT_t0iXnCq-_DDH_7m5AkxirtKpw2N7vYeD0PJojOPcBP3jQjEpg2OjHWQQoIc&usqp=CAU'
-                alt="Hair Style"
-              />
 
-<button
-                  className="absolute mt-2 text-[#701318] px-4 py-2 rounded-lg font-bold"
-                  style={{
-                    marginLeft: '56%',
-                    background: 'linear-gradient(180deg, rgb(248, 246, 239) 0%, rgb(195, 157, 90) 53%)',
-                    boxShadow: '0px 4px 10px rgba(255, 223, 186, 0.6)' 
-                  }}
-                >
-                  Đặt lịch ngay
-                </button>
-
-
-                <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white p-4">
-                  <p className="text-lg font-semibold">Kiểu tóc: Uốn gợn sóng</p>
-                  <p className="text-lg">Giá: 350.000 đ</p>
-<button>
-    Đat
-</button>
-                
-
-
-                </div>
+            <div className="flex items-center gap-3 mt-3 mb-3">
+                <div className={styles.borderFrame}></div>
+                <span className="font-bold items-center text-3xl ">Chương trình khuyến mãi</span>
             </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMs3at6HT_t0iXnCq-_DDH_7m5AkxirtKpw2N7vYeD0PJojOPcBP3jQjEpg2OjHWQQoIc&usqp=CAU" alt="Sunset in the mountains"/>
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
+            {/* banner */}
+            <div className="relative w-full" data-carousel="slide">
+                <div className="relative h-[500px] overflow-hidden rounded-lg">
+                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src={banner} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                     </div>
-                    <div class="px-6 pt-4 pb-2">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://quatangsangtaovn.com/wp-content/uploads/2020/09/banner-qu%C3%A0-t%E1%BA%B7ng-20-th%C3%A1ng-10-%C4%91%C3%A3-s%E1%BB%ADa.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                     </div>
-                </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMs3at6HT_t0iXnCq-_DDH_7m5AkxirtKpw2N7vYeD0PJojOPcBP3jQjEpg2OjHWQQoIc&usqp=CAU" alt="Sunset in the mountains"/>
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
+                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src={banner} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                     </div>
-                    <div class="px-6 pt-4 pb-2">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://quatangsangtaovn.com/wp-content/uploads/2020/09/banner-qu%C3%A0-t%E1%BA%B7ng-20-th%C3%A1ng-10-%C4%91%C3%A3-s%E1%BB%ADa.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+                    </div>
+                    <div className="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src={banner} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
                     </div>
                 </div>
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                    <img class="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMs3at6HT_t0iXnCq-_DDH_7m5AkxirtKpw2N7vYeD0PJojOPcBP3jQjEpg2OjHWQQoIc&usqp=CAU" alt="Sunset in the mountains"/>
-                    <div class="px-6 py-4">
-                        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                        <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                        </p>
-                    </div>
-                    <div class="px-6 pt-4 pb-2">
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-                    </div>
+                <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
                 </div>
-        </div>
-        
-      </div> */}
+                <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full  dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg className="w-4 h-4 text-gray-600 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        
+                        <span className="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full  dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg className="w-4 h-4 text-gray-600 dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10"
+                        >
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span className="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
 
             <div className="flex items-center gap-3 mt-3 mb-3">
                 <div className={styles.borderFrame}></div>

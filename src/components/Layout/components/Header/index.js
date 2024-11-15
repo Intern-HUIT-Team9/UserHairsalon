@@ -30,6 +30,7 @@ import {
 import logo_hairsalon from "../../../../assets/images/logo_hairsalon.png";
 import calendar from "../../../../assets/images/Remove-bg.ai_1731487568899.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -189,7 +190,7 @@ function Header() {
                       </div>
                       <div className="flex-auto">
                         <a
-                          href={item.href}
+                          href="/services"
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
