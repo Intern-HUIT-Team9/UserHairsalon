@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Products.module.scss";
-import gift1 from "~/assets/images/product/product1.jpg";
+import product1 from "~/assets/images/product/product1.jpg";
 const Product = ({ name, price, img }) => {
   return (
     <div
       className={`${styles.productCard} bg-white shadow-md rounded-md p-4 text-center`}
     >
       <img
-        src={gift1}
+        src={product1}
         alt={name}
         className={`${styles.productImage} mx-auto mb-4`}
       />

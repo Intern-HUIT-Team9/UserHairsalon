@@ -34,6 +34,11 @@ const App = () => {
 
   return (
     <div className="container mx-auto py-8">
+      <header className="mb-8 text-sm text-gray-500">
+        <nav>
+          Trang chủ {" > "} Sản phẩm {" > "}
+        </nav>
+      </header>
       <h1 className="text-2xl font-bold mb-6 text-center text-gray-800">
         Danh sách sản phẩm
       </h1>
