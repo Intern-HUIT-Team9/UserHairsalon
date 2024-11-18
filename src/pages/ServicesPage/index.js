@@ -1,9 +1,9 @@
 import React from "react";
-import service1 from "./images/hair_services/service1.jpg";
-import service2 from "./images/hair_services/service2.jpg";
-import service3 from "./images/hair_services/service3.jpg";
-import "./Services.module.scss";
 
+import "./Services.module.scss";
+import service1 from "../../assets/images/hair/layer-xoan-chu-c.webp";
+import service2 from "../../assets/images/hair/layer_ngan.jpeg";
+import service3 from "../../assets/images/hair/toc-uon-gon-song-17.jpg";
 function ServicesPage() {
   return (
     <div className="services">
