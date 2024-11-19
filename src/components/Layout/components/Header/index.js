@@ -31,6 +31,7 @@ import logo_hairsalon from "../../../../assets/images/logo_hairsalon.png";
 import calendar from "../../../../assets/images/Remove-bg.ai_1731487568899.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const products = [
   {
@@ -70,10 +71,14 @@ const callsToAction = [
 ];
 
 function Header() {
+  const navigate = useNavigate();
+  const redirectBookAppoinment = ()=>{
+    navigate("/book_appoinment")
+  }
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <>
-      <header className="bg-white">
+      <header className="bg-white relative z-50">
         <nav
           aria-label="Global"
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -99,7 +104,7 @@ function Header() {
           </div>
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
             <a
-              href="#"
+              href="/"
               className={`text-sm/6 font-semibold text-gray-900 ${styles.navItem}`}
             >
               TRANG CHỦ
@@ -165,7 +170,7 @@ function Header() {
               <PopoverButton
                 className={`flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 ${styles.navItem} `}
               >
-                DỊCH VỤ
+                <Link  to={"/services"} className="hover:text-[#EC0707]"> DỊCH VỤ</Link>
                 <ChevronDownIcon
                   aria-hidden="true"
                   className={`h-5 w-5 flex-none text-gray-400 group-hover:text-[#EC0707] ${styles.navItem}`}
@@ -235,7 +240,9 @@ function Header() {
           <div
             className={`hidden lg:flex lg:flex-1 lg:justify-end ${styles.flex_end}`}
           >
-            <button className={styles.btn_book}>
+            <button
+            onClick={redirectBookAppoinment}
+             className={styles.btn_book}>
               <img src={calendar} width={40} />
               <span>Đặt lịch</span>
             </button>
@@ -335,7 +342,9 @@ function Header() {
                   </a>
                 </div>
                 <div className="py-6">
-                  <button className={`${styles.btn_book}${styles.btn_bookk}`}>
+                  <button className={`${styles.btn_book}${styles.btn_bookk}`}
+                  onClick={redirectBookAppoinment}
+                  >
                     <img src={calendar} width={40} />
                     <span>Đặt lịch</span>
                   </button>

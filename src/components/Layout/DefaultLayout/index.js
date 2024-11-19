@@ -5,7 +5,6 @@ function DefaultLayout({ children }) {
   return (
     <div>
       <Header />
-      {/* {children} */}
       <div className="container-fill">
         <div className="row">
           <div className="col-md-10" style={{width:'100%'}}>

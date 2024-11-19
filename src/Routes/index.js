@@ -1,4 +1,5 @@
 import AboutUs from "~/pages/AboutUs"
+import BookAppoinmentPage from "~/pages/Book_Appoinment"
 import FAQ from "~/pages/FAQ"
 import HomePage from "~/pages/HomePage"
 import PrivatePolicy from "~/pages/PrivatePolicy"
@@ -12,7 +13,8 @@ const publicRoutes =[
     {path: "/private_policy", component: PrivatePolicy},
     {path:"/promotion", component:PromotionPage},
     {path:"/about_us", component: AboutUs},
-    {path:"/services", component: ServicesPage}
+    {path:"/services", component: ServicesPage},
+    {path:"/book_appoinment", component: BookAppoinmentPage}
 ]
 
 //Private Routers

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 import img_slogan from "../../../../assets/images/img_slogan.png";
+import map from "../../../../assets/images/map.png"
 
 function Footer() {
   return (
@@ -20,7 +21,7 @@ function Footer() {
                 <a href="/about_us">Về chúng tôi</a>
               </li>
               <li>
-                <a href="#">Điều khoản</a>
+                <a href="/promotion">Chương trình khuyến mãi</a>
               </li>
               <li>
                 <a href="/private_policy">Chính sách bảo mật</a>
@@ -45,7 +46,7 @@ function Footer() {
             </div>
             <div className={styles.map}>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBbeAe-tJC8MFGPrUx5_fUvIBUasHxbO95Kw&s"
+                src={map}
                 alt="Map Image"
               />
             </div>
@@ -59,7 +60,7 @@ function Footer() {
               <li>
                 <a href="#">
                 <i className="fa-brands fa-youtube" style={{color:'#f7082c'}}></i>Youtube{" "}
-                  <button className={styles.subscribe}><i className="fa-regular fa-bell"></i>&nbsp;Subscribe</button>
+                  <button className={styles.subscribe}><i className="fa-solid fa-bell"></i>&nbsp;Subscribe</button>
                 </a>
               </li>
               <li>
@@ -74,7 +75,7 @@ function Footer() {
                 </b>
               </p>
               <input type="email" placeholder="Enter your email..." />
-              <button>Đăng ký&nbsp;<i className="fa-regular fa-hand-pointer"></i></button>
+              <button>Đăng ký&nbsp;<i className="fa-solid fa-hand-pointer"></i></button>
             </div>
           </div>
         </div>

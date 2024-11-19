@@ -7,7 +7,7 @@ function PrivatePolicy() {
         <>
             <nav 
                 className="flex bg-gradient-to-r from-[#D5D2D2] via-[#D5D2D2] to-[#908888] p-2" 
-                style={{ background: 'linear-gradient(90deg, #D5D2D2 40%, #908888 93%)', fontFamily:"Labrada" }} 
+                style={{ background: 'linear-gradient(90deg, #f3f0f0 40%, #e6e6e6 93%)', fontFamily:"Labrada" }} 
                 aria-label="Breadcrumb"
             >
                 <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
