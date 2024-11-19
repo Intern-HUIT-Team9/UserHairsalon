@@ -5,6 +5,7 @@ import Product from "~/pages/Product";
 import PromotionPage from "~/pages/PromotionPage";
 import ServicesPage from "~/pages/ServicesPage";
 import ProductDetail from "~/pages/ProductDetail";
+import Blog from "~/pages/Blog";
 //Public Routes
 const publicRoutes = [
   { path: "/", component: HomePage },
@@ -14,6 +15,7 @@ const publicRoutes = [
   { path: "/service", component: ServicesPage },
   { path: "/product", component: Product },
   { path: "/ProductDetail", component: ProductDetail },
+  { path: "/Blog", component: Blog },
 ];
 
 //Private Routers
