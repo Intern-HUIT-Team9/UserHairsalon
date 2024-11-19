@@ -6,6 +6,7 @@ import PromotionPage from "~/pages/PromotionPage";
 import ServicesPage from "~/pages/ServicesPage";
 import ProductDetail from "~/pages/ProductDetail";
 import Blog from "~/pages/Blog";
+import CareerOpportunities from "~/pages/CareerOpportunities";
 //Public Routes
 const publicRoutes = [
   { path: "/", component: HomePage },
@@ -16,6 +17,7 @@ const publicRoutes = [
   { path: "/product", component: Product },
   { path: "/ProductDetail", component: ProductDetail },
   { path: "/Blog", component: Blog },
+  { path: "/CareerOpportunities", component: CareerOpportunities },
 ];
 
 //Private Routers
