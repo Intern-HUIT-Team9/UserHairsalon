@@ -1,0 +1,9 @@
+.pagination {
+  button {
+    transition: background-color 0.2s ease;
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+}

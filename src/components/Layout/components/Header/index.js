@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 import { useState } from "react";
@@ -30,7 +31,6 @@ import {
 import logo_hairsalon from "../../../../assets/images/logo_hairsalon.png";
 import calendar from "../../../../assets/images/Remove-bg.ai_1731487568899.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const products = [
@@ -113,7 +113,7 @@ function Header() {
               <PopoverButton
                 className={`flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 ${styles.navItem} `}
               >
-                SẢN PHẨM
+                <Link  to={"/product"} className="hover:text-[#EC0707]"> SẢN PHẨM</Link>
                 <ChevronDownIcon
                   aria-hidden="true"
                   className={`h-5 w-5 flex-none text-gray-400 group-hover:text-[#EC0707] ${styles.navItem}`}
@@ -224,7 +224,7 @@ function Header() {
               </PopoverPanel>
             </Popover>
             <a
-              href="#"
+              href="/CareerOpportunities"
               className={`text-sm/6 font-semibold text-gray-900 ${styles.navItem}`}
             >
               TIN TỨC
@@ -246,7 +246,7 @@ function Header() {
               <img src={calendar} width={40} />
               <span>Đặt lịch</span>
             </button>
-            <a href="#" className="text-sm/6 font-semibold text-gray-900">
+            <a href="/login" className="text-sm/6 font-semibold text-gray-900">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -287,7 +287,7 @@ function Header() {
                   </a>
                   <Disclosure as="div" className="-mx-3">
                     <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                      SẢN PHẨM
+                      <Link to={"/product"}>SẢN PHẨM</Link>
                       <ChevronDownIcon
                         aria-hidden="true"
                         className="h-5 w-5 flex-none group-data-[open]:rotate-180"
@@ -307,27 +307,19 @@ function Header() {
                     </DisclosurePanel>
                   </Disclosure>
 
-                  <Disclosure as="div" className="-mx-3">
-                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                  <div className="-mx-3">
+                    <Link
+                      to="/services"
+                      className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    >
                       DỊCH VỤ
                       <ChevronDownIcon
                         aria-hidden="true"
-                        className="h-5 w-5 flex-none group-data-[open]:rotate-180"
+                        className="h-5 w-5 flex-none"
                       />
-                    </DisclosureButton>
-                    <DisclosurePanel className="mt-2 space-y-2">
-                      {[...products, ...callsToAction].map((item) => (
-                        <DisclosureButton
-                          key={item.name}
-                          as="a"
-                          href={item.href}
-                          className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
-                        >
-                          {item.name}
-                        </DisclosureButton>
-                      ))}
-                    </DisclosurePanel>
-                  </Disclosure>
+                    </Link>
+                  </div>
+
                   <a
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
@@ -349,7 +341,7 @@ function Header() {
                     <span>Đặt lịch</span>
                   </button>
                   <br />
-                  <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                  <a href="/login" className="text-sm/6 font-semibold text-gray-900">
                     Log in <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
