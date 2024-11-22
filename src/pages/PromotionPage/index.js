@@ -34,7 +34,6 @@ function PromotionPage() {
                     </li>
                 </ol>
             </nav>
-
             <div className="flex items-center gap-0 mt-3 mb-3">
                 <div className={styles.borderFrame}></div>
                 <span className="font-bold items-center text-3xl ">Chương trình khuyến mãi</span>

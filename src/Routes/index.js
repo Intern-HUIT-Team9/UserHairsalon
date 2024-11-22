@@ -26,7 +26,6 @@ const publicRoutes =[
     { path: "/CareerOpportunities", component: CareerOpportunities },
     { path: "/login", component: LoginPage },
 ]
-
 //Private Routers
 const privateRoutes = [];
 
