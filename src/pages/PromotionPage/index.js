@@ -41,21 +41,21 @@ function PromotionPage() {
             </div>
             {/* banner */}
             <div className="relative w-full" data-carousel="slide">
-                <div className="relative h-[500px] sm:h-[400px] md:h-[500px] overflow-hidden rounded-lg">
+                <div className="relative h-[500px] sm:h-[300px] md:h-[500px] overflow-hidden rounded-lg">
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src={banner} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                        <img src={banner} className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                     </div>
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://quatangsangtaovn.com/wp-content/uploads/2020/09/banner-qu%C3%A0-t%E1%BA%B7ng-20-th%C3%A1ng-10-%C4%91%C3%A3-s%E1%BB%ADa.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                        <img src="https://quatangsangtaovn.com/wp-content/uploads/2020/09/banner-qu%C3%A0-t%E1%BA%B7ng-20-th%C3%A1ng-10-%C4%91%C3%A3-s%E1%BB%ADa.jpg" className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                     </div>
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src={banner} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                        <img src={banner} className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                     </div>
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://quatangsangtaovn.com/wp-content/uploads/2020/09/banner-qu%C3%A0-t%E1%BA%B7ng-20-th%C3%A1ng-10-%C4%91%C3%A3-s%E1%BB%ADa.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                        <img src="https://quatangsangtaovn.com/wp-content/uploads/2020/09/banner-qu%C3%A0-t%E1%BA%B7ng-20-th%C3%A1ng-10-%C4%91%C3%A3-s%E1%BB%ADa.jpg" className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                     </div>
                     <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src={banner} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                        <img src={banner} className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
                     </div>
                 </div>
                 <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
@@ -90,7 +90,7 @@ function PromotionPage() {
                 <div className={styles.borderFrame}></div>
                 <span className="font-bold items-center text-3xl ">Các ưu đãi, khuyến mãi dịp lễ</span>
             </div>
-            <div className="flex flex-wrap justify-center gap-3 mt-5">
+            <div className="flex flex-wrap justify-center gap-2 mt-3 mb-4">
 
                 <div className="max-w-sm h-96 m-4 rounded overflow-hidden shadow-lg relative w-80"
                     style={{
@@ -191,7 +191,7 @@ function PromotionPage() {
                 <span className="font-bold items-center text-3xl ">Các gói ưu đãi, khuyến mãi dành cho thành viên</span>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-2 mt-5">
+            <div className="flex flex-wrap justify-center gap-2 mt-3 mb-4">
 
                 <div className="max-w-sm h-96 m-4 rounded overflow-hidden shadow-lg relative w-80"
                     style={{
@@ -274,32 +274,7 @@ function PromotionPage() {
                     </button>
                 </div>
 
-                <div className="max-w-sm h-96 m-4 rounded overflow-hidden shadow-lg relative w-80"
-                    style={{
-                        background: 'linear-gradient(rgb(255 244 244 / 61%) 0%, rgb(255 135 147 / 61%) 51%)'
-                    }}
-                >
-                    <h2 className="mt-3 text-lg font-bold text-center uppercase">
-                        Membership<br />Discount
-                    </h2>
-                    <img
-                        className={`absolute w-full h-1/2 object-cover bottom-24`}
-                        src={gift4}
-                        alt="Hair Style"
-                    />
-                    <button
-                        className="w-32 items-center justify-center absolute inset-x-0 bottom-7 mt-2 text-[#701318] px-4 py-2 rounded-lg font-bold"
-                        style={{
-                            left: '50%',
-                            borderRadius: '30px',
-                            transform: 'translateX(-50%)',
-                            background: 'linear-gradient(180deg, #FC7E7E 100%, #FCD2D2 49%)',
-                            boxShadow: '0px 4px 10px rgba(255, 223, 186, 0.6)',
-                        }}
-                    >
-                        Dùng ngay
-                    </button>
-                </div>
+
 
             </div>
 
