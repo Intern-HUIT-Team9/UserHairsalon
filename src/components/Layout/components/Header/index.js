@@ -72,7 +72,7 @@ const callsToAction = [
 
 function Header() {
   const navigate = useNavigate();
-  const redirectBookAppoinment = ()=>{
+  const redirectBookAppoinment = () => {
     navigate("/book_appoinment")
   }
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -113,7 +113,7 @@ function Header() {
               <PopoverButton
                 className={`flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 ${styles.navItem} `}
               >
-                <Link  to={"/product"} className="hover:text-[#EC0707]"> SẢN PHẨM</Link>
+                <Link to={"/product"} className="hover:text-[#EC0707]"> SẢN PHẨM</Link>
                 <ChevronDownIcon
                   aria-hidden="true"
                   className={`h-5 w-5 flex-none text-gray-400 group-hover:text-[#EC0707] ${styles.navItem}`}
@@ -170,7 +170,7 @@ function Header() {
               <PopoverButton
                 className={`flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 ${styles.navItem} `}
               >
-                <Link  to={"/services"} className="hover:text-[#EC0707]"> DỊCH VỤ</Link>
+                <Link to={"/services"} className="hover:text-[#EC0707]"> DỊCH VỤ</Link>
                 <ChevronDownIcon
                   aria-hidden="true"
                   className={`h-5 w-5 flex-none text-gray-400 group-hover:text-[#EC0707] ${styles.navItem}`}
@@ -241,8 +241,8 @@ function Header() {
             className={`hidden lg:flex lg:flex-1 lg:justify-end ${styles.flex_end}`}
           >
             <button
-            onClick={redirectBookAppoinment}
-             className={styles.btn_book}>
+              onClick={redirectBookAppoinment}
+              className={styles.btn_book}>
               <img src={calendar} width={40} />
               <span>Đặt lịch</span>
             </button>
@@ -335,7 +335,7 @@ function Header() {
                 </div>
                 <div className="py-6">
                   <button className={`${styles.btn_book}${styles.btn_bookk}`}
-                  onClick={redirectBookAppoinment}
+                    onClick={redirectBookAppoinment}
                   >
                     <img src={calendar} width={40} />
                     <span>Đặt lịch</span>

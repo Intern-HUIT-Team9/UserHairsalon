@@ -28,9 +28,8 @@ function AboutUs() {
                     <p className="flex justify-center items-center mx-4 sm:mx-10 md:mx-20 lg:mx-32 mb-5 text-justify">
                         Với cam kết không ngừng đổi mới và phát triển, chúng tôi hướng tới việc đáp ứng sự đa dạng phong cách của khách hàng. Traky không chỉ hứa hẹn mang đến cho bạn một trải nghiệm làm đẹp, mà còn tạo ra một hành trình khám phá và tận hưởng sự hoàn hảo của cá nhân.
                     </p>
-
                 </>
-                
+
             );
         } else if (activeTab === "suMenh") {
             return (
@@ -39,37 +38,28 @@ function AboutUs() {
                         <p className="text-justify text-base max-w-full text-gray-800">
                             Sứ mệnh của chúng tôi là mang đến cho khách hàng những trải nghiệm làm đẹp tốt nhất với các dịch vụ chuyên nghiệp và tận tâm. Chúng tôi luôn nỗ lực trong việc phát triển để đáp ứng và vượt qua mong đợi của khách hàng.
                         </p>
-                    
                     </div>
-
-
                     <div className="grid grid-cols-3 gap-2 mb-10 ml-5 mr-5">
 
-                    <a href="#" className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        <a href="#" className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
 
-                        <div className="w-full">
-                        <img style={{height:"330px"}} className="object-cover w-full h-96 md:h-auto rounded-t-lg md:rounded-lg md:rounded-l-lg" src={tn1} alt="" />
-                        </div>
-                    </a>
+                            <div className="w-full">
+                                <img style={{ height: "330px" }} className="object-cover w-full h-96 md:h-auto rounded-t-lg md:rounded-lg md:rounded-l-lg" src={tn1} alt="" />
+                            </div>
+                        </a>
+                        <a href="#" className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
 
-                    <a href="#" className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-
-                        <div className="w-full">
-                        <img style={{height:"330px"}} className="object-cover w-full h-96 md:h-auto rounded-t-lg md:rounded-lg md:rounded-l-lg" src={tn2} alt="" />
-                        </div>
-                    </a>
-
-
-                    <a href="#" className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                        <div className="w-full">
-                        <img style={{height:"330px"}} className="object-cover w-full h-96 md:h-auto rounded-t-lg md:rounded-lg md:rounded-l-lg" src={tn3} alt="" />
-                        </div>
-                    </a>
+                            <div className="w-full">
+                                <img style={{ height: "330px" }} className="object-cover w-full h-96 md:h-auto rounded-t-lg md:rounded-lg md:rounded-l-lg" src={tn2} alt="" />
+                            </div>
+                        </a>
+                        <a href="#" className="flex flex-col md:flex-row items-center bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                            <div className="w-full">
+                                <img style={{ height: "330px" }} className="object-cover w-full h-96 md:h-auto rounded-t-lg md:rounded-lg md:rounded-l-lg" src={tn3} alt="" />
+                            </div>
+                        </a>
                     </div>
-
                 </>
-                
-                
             );
         } else if (activeTab === "tamNhin") {
             return (
@@ -87,69 +77,68 @@ function AboutUs() {
                             </p>
                         </div>
                     </div>
-                <div className="p-2 max-w-full bg-transparent border-none rounded-lg">
-                    <a href="#" className="block w-[60%] h-[60%] sm:w-2/3 sm:h-2/3 md:w-[60%] md:h-[60%] overflow-hidden rounded-full border-2 mx-auto">
-                        <img className="object-cover w-full h-full" src={nhanvien} alt="" />
-                    </a>
-                    <div className="py-2 px-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white capitalize">Nhân viên</h5>
+                    <div className="p-2 max-w-full bg-transparent border-none rounded-lg">
+                        <a href="#" className="block w-[60%] h-[60%] sm:w-2/3 sm:h-2/3 md:w-[60%] md:h-[60%] overflow-hidden rounded-full border-2 mx-auto">
+                            <img className="object-cover w-full h-full" src={nhanvien} alt="" />
                         </a>
-                        <p className="text-base sm:text-lg font-normal text-gray-700 dark:text-gray-400">
-                        Một cộng đồng năng động, nơi mọi thành viên có thể tự hào, hăng say học hỏi, và đóng góp để hướng đến một cuộc sống thịnh vượng và hạnh phúc
-                        </p>
+                        <div className="py-2 px-5">
+                            <a href="#">
+                                <h5 className="mb-2 text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white capitalize">Nhân viên</h5>
+                            </a>
+                            <p className="text-base sm:text-lg font-normal text-gray-700 dark:text-gray-400">
+                                Một cộng đồng năng động, nơi mọi thành viên có thể tự hào, hăng say học hỏi, và đóng góp để hướng đến một cuộc sống thịnh vượng và hạnh phúc
+                            </p>
+                        </div>
+                    </div>
+                    <div className="p-2 max-w-full bg-transparent border-none rounded-lg">
+                        <a href="#" className="block w-[60%] h-[60%] sm:w-2/3 sm:h-2/3 md:w-[60%] md:h-[60%] overflow-hidden rounded-full border-2 mx-auto">
+                            <img className="object-cover w-full h-full" src={congdong} alt="" />
+                        </a>
+                        <div className="py-2 px-5">
+                            <a href="#">
+                                <h5 className="mb-2 text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white capitalize">Cộng đồng</h5>
+                            </a>
+                            <p className="text-base sm:text-lg font-normal text-gray-700 dark:text-gray-400">
+                                Tổ chức hỗ trợ các chương trình cộng đồng, góp phần xây dựng một xã hội ngày càng phồn thịnh và hạnh phúc
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div className="p-2 max-w-full bg-transparent border-none rounded-lg">
-                    <a href="#" className="block w-[60%] h-[60%] sm:w-2/3 sm:h-2/3 md:w-[60%] md:h-[60%] overflow-hidden rounded-full border-2 mx-auto">
-                        <img className="object-cover w-full h-full" src={congdong} alt="" />
-                    </a>
-                    <div className="py-2 px-5">
-                        <a href="#">
-                            <h5 className="mb-2 text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white capitalize">Cộng đồng</h5>
-                        </a>
-                        <p className="text-base sm:text-lg font-normal text-gray-700 dark:text-gray-400">
-                        Tổ chức hỗ trợ các chương trình cộng đồng, góp phần xây dựng một xã hội ngày càng phồn thịnh và hạnh phúc
-                        </p>
-                    </div>
-                </div>
-            </div>
             );
         } else if (activeTab === "giaTri") {
             return (
                 <div className="flex flex-col items-center justify-center min-h-screen bg-white relative">
-                    {/* <h1 class="text-5xl font-extrabold text-gray-300 mb-10 items-center absolute">Hair Salon</h1> */}
                     <h2 className="font-bold text-5xl uppercase text-center mb-10 items-center absolute mt-4 text-gray-500 blur-[2px]">
                         Hair Salon
-                        </h2>
+                    </h2>
 
 
-                        <div class="grid grid-cols-2 gap-10 md:gap-[16rem] text-center">
+                    <div class="grid grid-cols-2 gap-10 md:gap-[16rem] text-center">
                         <div class="relative border rounded-full p-6 w-48 h-48 flex items-center justify-center">
                             <div>
-                            <h3 class="text-xl font-bold text-indigo-700 absolute top-[-3px] w-[120px] left-9 bg-white">Sáng Tạo</h3>
-                            <p class="text-gray-500 text-sm mt-2">Khám phá và tạo ra những kiểu tóc độc đáo và phù hợp với cá tính mới khách hàng.</p>
+                                <h3 class="text-xl font-bold text-indigo-700 absolute top-[-3px] w-[120px] left-9 bg-white">Sáng Tạo</h3>
+                                <p class="text-gray-500 text-sm mt-2">Khám phá và tạo ra những kiểu tóc độc đáo và phù hợp với cá tính mới khách hàng.</p>
                             </div>
                         </div>
                         <div class="relative border rounded-full p-6 w-48 h-48 flex items-center justify-center">
                             <div>
-                            <h3 class="text-xl font-bold text-indigo-700 absolute top-[-3px] w-[120px] left-9 bg-white ">Đẳng Cấp</h3>
-                            <p class="text-gray-500 text-sm mt-2">Mang đến trải nghiệm làm đẹp chất lượng, đẳng cấp, đáp ứng mọi nhu cầu của khách hàng.</p>
+                                <h3 class="text-xl font-bold text-indigo-700 absolute top-[-3px] w-[120px] left-9 bg-white ">Đẳng Cấp</h3>
+                                <p class="text-gray-500 text-sm mt-2">Mang đến trải nghiệm làm đẹp chất lượng, đẳng cấp, đáp ứng mọi nhu cầu của khách hàng.</p>
                             </div>
                         </div>
                         <div class="relative border rounded-full p-6 w-48 h-48 flex items-center justify-center">
                             <div>
-                            <h3 class="text-xl font-bold text-indigo-700 absolute top-[-3px] w-[120px] left-9 bg-white">Tận Tâm</h3>
-                            <p class="text-gray-500 text-sm mt-2">Cam kết chăm sóc tóc và làm đẹp với từng chi tiết tuyệt vời dành riêng cho khách hàng.</p>
+                                <h3 class="text-xl font-bold text-indigo-700 absolute top-[-3px] w-[120px] left-9 bg-white">Tận Tâm</h3>
+                                <p class="text-gray-500 text-sm mt-2">Cam kết chăm sóc tóc và làm đẹp với từng chi tiết tuyệt vời dành riêng cho khách hàng.</p>
                             </div>
                         </div>
                         <div class="relative border rounded-full p-6 w-48 h-48 flex items-center justify-center">
                             <div>
-                            <h3 class="text-xl font-bold text-indigo-700 absolute top-[-3px] w-[120px] left-9 bg-white">Đổi Mới</h3>
-                            <p class="text-gray-500 text-sm mt-2">Liên tục nghiên cứu và phát triển các dịch vụ mới, làm hài lòng với sự đa dạng của khách hàng.</p>
+                                <h3 class="text-xl font-bold text-indigo-700 absolute top-[-3px] w-[120px] left-9 bg-white">Đổi Mới</h3>
+                                <p class="text-gray-500 text-sm mt-2">Liên tục nghiên cứu và phát triển các dịch vụ mới, làm hài lòng với sự đa dạng của khách hàng.</p>
                             </div>
                         </div>
-                        </div>
+                    </div>
                 </div>
             );
         }

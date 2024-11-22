@@ -2,5 +2,8 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "compile-hero.disable-compile-files-on-did-save-code": false,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }

@@ -55,11 +55,11 @@ function Footer() {
             <h3>Theo dõi chúng tôi</h3>
             <ul className={styles.social_links}>
               <li>
-                <a href="#"><i className="fa-brands fa-facebook" style={{color:"#0659ea"}}></i>&nbsp;Facebook</a>
+                <a href="#"><i className="fa-brands fa-facebook" style={{ color: "#0659ea" }}></i>&nbsp;Facebook</a>
               </li>
               <li>
                 <a href="#">
-                <i className="fa-brands fa-youtube" style={{color:'#f7082c'}}></i>Youtube{" "}
+                  <i className="fa-brands fa-youtube" style={{ color: '#f7082c' }}></i>Youtube{" "}
                   <button className={styles.subscribe}><i className="fa-solid fa-bell"></i>&nbsp;Subscribe</button>
                 </a>
               </li>
